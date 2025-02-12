@@ -1,0 +1,10 @@
+SELECT item_name, price
+FROM superstore;
+----- sum of all prices
+SELECT SUM(price)
+FROM superstore;
+----price of kitchen supplies descending 
+SELECT category, price
+FROM superstore
+WHERE category = 'Kitchen Supplies'
+ORDER BY price desc;
